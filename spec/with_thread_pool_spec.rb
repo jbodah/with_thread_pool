@@ -30,4 +30,9 @@ RSpec.describe WithThreadPool do
     all_in_order = call_orders.all? { |order| order == [1,2,3] }
     expect(all_in_order).to be(false)
   end
+
+  it "returns the correct class" do
+    return_class = (1..10).with_thread_pool(5) { |n| n }.class
+    expect(return_class).to be(Array)
+  end
 end
