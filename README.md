@@ -2,6 +2,12 @@
 
 simple lib for wrapping your enumerators with thread pools
 
+## Installation
+
+```
+gem build *.gemspec && gem install *.gem
+```
+
 ## Usage
 
 ```
